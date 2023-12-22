@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "hint-font";
+  src: url("../font/Roboto-Medium.ttf");
+}
+html {
+  font-family: "hint-font";
+  color: #000;
+  font-size: 16px;
+}
+.my-cv {
+  padding: 16px 0px;
+  section {
+    margin: auto;
+    max-width: 1210px;
+  }
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --textColor: #a7a7a7;
+  --textHover: blue;
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  color: #fff;
+}
+// scroll bar
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9055ff, #13e2da);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #9055ff, #13e2da);
+}
+// banner
+.banner {
+  width: 100%;
+  flex-direction: row;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .banner_content {
+    max-width: 40%;
+    font-size: 2rem;
+    > span {
+      background: -webkit-linear-gradient(#9055ff, #13e2da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    svg {
+      color: #13e2da;
+      background: -webkit-linear-gradient(#9055ff, #13e2da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .banner_avatar {
+    width: 25%;
+    padding: 6px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #9055ff, #13e2da);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+      width: 100%;
+      height: 25%;
+      border-radius: 50%;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+// technology
+.technology {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.technology_title {
+  font-size: 3rem;
+}
+.technology_description {
+  font-size: 2rem;
+}
+.technology_list_tech {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.technology_teach_item {
+  width: 20%;
+  padding: 8px;
+}
