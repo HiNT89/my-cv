@@ -8,9 +8,11 @@
   src: url("../font/Roboto-Medium.ttf");
 }
 html {
+  overflow: auto;
   font-family: "hint-font";
   color: #000;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 .my-cv {
   padding: 16px 0px;
@@ -24,13 +26,14 @@ a {
 }
 :root {
   --textColor: #a7a7a7;
-  --textHover: blue;
+  --textHover: #13e2da;
 }
 main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
   color: #fff;
+  position: relative;
 }
 // scroll bar
 /* width */

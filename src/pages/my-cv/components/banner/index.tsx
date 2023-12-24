@@ -7,7 +7,7 @@ export function Banner() {
       <p className="banner_content">
         Hi, <FontAwesomeIcon icon={faLaptopCode} />
         <br />
-        My nam <span>Hieu</span>
+        My name is <span>Hieu</span>
         <br />I am Front End Developer
       </p>
       <div className="banner_avatar">
