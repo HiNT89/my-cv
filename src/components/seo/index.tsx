@@ -18,7 +18,7 @@ export default function Seo({ title = "My CV - HiNT Dev" }: SeoProps) {
       {/* -------------- */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://hint.id.vn" />
-      <meta property="og:title" content="My CV - HiNT Dev" />
+      <meta property="og:title" content="My CV - HiNT Developer" />
       <meta
         property="og:description"
         content="I am developer. This is my website"
