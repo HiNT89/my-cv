@@ -27,6 +27,7 @@ a {
 :root {
   --textColor: #a7a7a7;
   --textHover: #13e2da;
+  --bgCore: #13e2da;
 }
 main {
   width: 100%;
@@ -118,6 +119,32 @@ main {
   flex-wrap: wrap;
 }
 .technology_teach_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20%;
   padding: 8px;
+}
+
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
+  .banner {
+    height: calc(65vh - 100px);
+  }
+  .banner_content {
+    max-width: 100% !important;
+  }
+  .banner_avatar {
+    display: none !important;
+  }
+  .technology_title {
+    font-size: 1.5rem !important;
+  }
+  .technology_description {
+    font-size: 1rem !important;
+  }
+  .technology_teach_item {
+    width: 50% !important;
+  }
 }

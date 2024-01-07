@@ -41,3 +41,67 @@
 .header_nav_item {
   padding: 4px 6px;
 }
+.nav_mobile {
+  display: none;
+}
+/* responsive.css */
+@media all and (max-width: 768px) {
+  .content {
+    margin-top: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 480px) {
+  .my-cv {
+    padding: 12px;
+  }
+  .header_wrapper {
+    .header_nav_wrapper {
+      display: none;
+    }
+  }
+  .nav_mobile {
+    display: block;
+    svg {
+      font-size: 20px;
+    }
+  }
+  .header_mobile {
+    display: none;
+    .header_nav_wrapper.header_mobile {
+      flex-direction: column;
+      background-color: red;
+    }
+  }
+  .header_mobile.active {
+    display: block;
+  }
+}
+.modal-nav-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 8px;
+  .top {
+    svg {
+      font-size: 30px;
+    }
+  }
+  .header_nav.mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+  .header_nav_item.mobile {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+  }
+}
+.css-m9glnp-MuiPaper-root-MuiDialog-paper {
+  background-color: #000 !important;
+  color: #fff;
+}

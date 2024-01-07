@@ -1,0 +1,38 @@
+.admin-wrapper {
+  width: 100%;
+}
+.admin-sidebar {
+  width: 18%;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 2px solid #ccc;
+  .admin-sidebar-top {
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+  }
+  .admin-sidebar-content {
+    padding: 12px 8px;
+    gap: 6px;
+    .item.active {
+      background-color: rgb(0, 0, 0, 0.5);
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+.admin-content {
+  flex-grow: 1;
+  height: 500px;
+}
+.admin-content-top {
+  padding: 16px 24px;
+  background-color: #fff;
+  box-shadow: #ccc 2px 2px 2px;
+}
+.admin-project-wrapper {
+  padding: 16px 1rem;
+}

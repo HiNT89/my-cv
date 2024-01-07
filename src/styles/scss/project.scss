@@ -63,3 +63,20 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 480px) {
+  .projects {
+    margin-top: 3rem;
+  }
+  .projects_title {
+    font-size: 1.5rem !important;
+  }
+  .projects_description {
+    font-size: 1rem !important;
+  }
+  .projects_item_wrapper {
+    width: 100% !important;
+  }
+}

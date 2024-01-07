@@ -1,0 +1,14 @@
+/* responsive.css */
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+  .content {
+    margin-top: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 480px) {
+}
