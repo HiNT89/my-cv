@@ -1,15 +1,16 @@
-import CSSIcon from "@/components/icons/css";
-import FirebaseIcon from "@/components/icons/firebase";
-import GitIcon from "@/components/icons/git";
-import HTMLIcon from "@/components/icons/html";
-import JSIcon from "@/components/icons/javascript";
-import MuiIcon from "@/components/icons/mui";
-import NextJSIcon from "@/components/icons/nextjs";
-import NodeJSIcon from "@/components/icons/nodejs";
-import ReactIcon from "@/components/icons/react";
-import ReduxIcon from "@/components/icons/redux";
-import SASSIcon from "@/components/icons/sass";
-import VSCodeIcon from "@/components/icons/vscode";
+import HTMLIcon from "../../../../components/icons/html";
+import CSSIcon from "../../../../components/icons/css";
+import FirebaseIcon from "../../../../components/icons/firebase";
+import GitIcon from "../../../../components/icons/git";
+// import HTMLIcon from "../../../../components/icons/html";
+import JSIcon from "../../../../components/icons/javascript";
+import MuiIcon from "../../../../components/icons/mui";
+import NextJSIcon from "../../../../components/icons/nextjs";
+import NodeJSIcon from "../../../../components/icons/nodejs";
+import ReactIcon from "../../../../components/icons/react";
+import ReduxIcon from "../../../../components/icons/redux";
+import SASSIcon from "../../../../components/icons/sass";
+import VSCodeIcon from "../../../../components/icons/vscode";
 
 export default function Technology() {
   return (
