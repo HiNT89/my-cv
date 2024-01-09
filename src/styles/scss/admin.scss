@@ -2,7 +2,7 @@
   width: 100%;
 }
 .admin-sidebar {
-  width: 18%;
+  width: 18vw;
   height: 100vh;
   overflow-y: auto;
   border-right: 2px solid #ccc;
@@ -25,8 +25,7 @@
   }
 }
 .admin-content {
-  flex-grow: 1;
-  height: 500px;
+  width: 82vw;
 }
 .admin-content-top {
   padding: 16px 24px;
@@ -34,5 +33,94 @@
   box-shadow: #ccc 2px 2px 2px;
 }
 .admin-project-wrapper {
+  width: 100%;
   padding: 16px 1rem;
+}
+.admin-project-content {
+  flex-wrap: wrap;
+}
+.projects_item_wrapper.admin {
+  width: 33.33%;
+}
+.projects_item.admin {
+  border: 1px solid #ccc;
+  box-shadow: #ccc 2px 2px 2px;
+}
+.projects_item_content.admin {
+  background-color: #fff !important;
+}
+.projects_item_direct.admin {
+  padding: 0px 8px;
+  > div {
+    cursor: pointer;
+  }
+  svg {
+    font-size: 1.5rem;
+    color: var(--textHover);
+  }
+}
+.modal-create-project {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  padding: 16px;
+  color: #000;
+  gap: 16px;
+  .modal-top {
+    justify-content: space-between;
+    font-size: 1.2rem;
+    height: 40px;
+  }
+  .center-modal {
+    height: (calc(100vh - 56px));
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    flex-wrap: wrap;
+    overflow: auto;
+    box-shadow: #ccc 2px 2px 2px;
+  }
+}
+.custom-checkbox {
+  appearance: none;
+  width: 20px !important;
+  height: 20px !important;
+  border: 2px solid #a9b0bc !important;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 999;
+  top: 4px;
+  left: 16px;
+  background: #fff !important;
+  &:checked::before {
+    content: "\2713";
+    font-size: 20px;
+    line-height: 18px;
+    color: #00a897;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.list-image-wrapper.admin {
+  width: 100%;
+  gap: 16px;
+}
+.list-image-top.admin {
+  justify-content: space-between;
+  align-items: center;
+}
+.list-image-top-btns.admin {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+// .list-image-preview-item.admin {
+//   width: 33.33%;
+// }
+.list-image-preview.admin {
+  flex-wrap: wrap;
+  gap: 16px 0px;
 }

@@ -1,5 +1,7 @@
 import type { AppProps } from "next/app";
 import "../styles/scss/styles.scss";
+import "../../node_modules/slick-carousel/slick/slick.css";
+import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
