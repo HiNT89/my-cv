@@ -9,13 +9,6 @@ import {
 } from "@mui/material";
 import React, { useCallback, useState, useEffect } from "react";
 import ButtonCore from "../../../../components/button/button-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faLink,
-  faPenToSquare,
-  faTrash,
-} from "@fortawesome/free-solid-svg-icons";
 import Slide from "@mui/material/Slide";
 import Link from "next/link";
 import SlickImage from "../../components/project/slick-image";
@@ -221,14 +214,14 @@ export default function ProjectPage(props: ProjectPageProps) {
                       setFormData(it);
                     }}
                   >
-                    <FontAwesomeIcon icon={faTrash} />
+                    <i className="fas fa-trash"></i>
                   </div>
                   <div
                     onClick={() => {
                       handleGetDetail(it.id);
                     }}
                   >
-                    <FontAwesomeIcon icon={faPenToSquare} />
+                    <i className="fas fa-pen-square"></i>
                   </div>
                 </div>
               </div>

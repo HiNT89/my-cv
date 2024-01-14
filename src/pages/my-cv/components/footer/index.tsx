@@ -1,6 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -14,12 +12,12 @@ export default function Footer() {
           <li className="footer_social_item">2001hieunt89@gmail.com</li>
           <li className="footer_social_item">
             <a href="https://github.com/HiNT89">
-              <FontAwesomeIcon icon={faGithub} />
+              <i className="fab fa-github"></i>
             </a>
           </li>
           <li className="footer_social_item">
             <a href="https://www.facebook.com/ntt.starup/">
-              <FontAwesomeIcon icon={faFacebook} />
+              <i className="fab fa-facebook"></i>
             </a>
           </li>
         </ul>

@@ -1,8 +1,5 @@
 import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
 import SlickImage from "./slick-image";
 import { getDataProjectsService } from "../../../../service";
 import Tooltip from "@mui/material/Tooltip";
@@ -37,11 +34,11 @@ export default function Projects() {
                 <p>{it.tech_stack}</p>
                 <div className="projects_item_direct">
                   <div>
-                    <FontAwesomeIcon icon={faLink} />
+                    <i className="fas fa-link"></i>{" "}
                     <Link href={it.domain}>Live preview</Link>
                   </div>
                   <div>
-                    <FontAwesomeIcon icon={faGithub} />
+                    <i className="fab fa-github"></i>
                     <Link href={it.link_github}>View code</Link>
                   </div>
                 </div>

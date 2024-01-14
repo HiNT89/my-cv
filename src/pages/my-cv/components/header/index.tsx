@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Dialog from "@mui/material/Dialog";
 import { TransitionProps } from "@mui/material/transitions";
 import Slide from "@mui/material/Slide";
@@ -48,12 +45,12 @@ export default function Header() {
         <ul className="header_social">
           <li className="header_social_item">
             <a href="https://github.com/HiNT89">
-              <FontAwesomeIcon icon={faGithub} />
+              <i className="fab fa-github"></i>
             </a>
           </li>
           <li className="header_social_item">
             <a href="https://www.facebook.com/ntt.starup/">
-              <FontAwesomeIcon icon={faFacebook} />
+              <i className="fab fa-facebook"></i>
             </a>
           </li>
         </ul>
@@ -64,7 +61,7 @@ export default function Header() {
           handleToggleModal("nav", !modals.nav);
         }}
       >
-        <FontAwesomeIcon icon={faBars} />
+        <i className="fas fa-bars"></i>
         <Dialog
           fullScreen
           open={modals.nav}
@@ -80,7 +77,7 @@ export default function Header() {
                 handleToggleModal("nav", false);
               }}
             >
-              <FontAwesomeIcon icon={faXmark} />
+              <i className="fas fa-times"></i>
             </Box>
             <Stack direction="column" width={"100%"}>
               <ul className="header_nav mobile">
@@ -100,18 +97,6 @@ export default function Header() {
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
-              {/* <ul className="header_social mobile">
-                <li className="header_social_item mobile">
-                  <a href="https://github.com/HiNT89">
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </li>
-                <li className="header_social_item mobile">
-                  <a href="https://www.facebook.com/ntt.starup/">
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </a>
-                </li>
-              </ul> */}
             </Stack>
           </div>
         </Dialog>
